@@ -35,6 +35,7 @@ python Text/textFilesUpload.py
 Fill in the queries in the queries empty array under " " and use comma for seperating multiple queries.
 ```
 ✅ A `queries.json` file is created with document IDs and space for entering multiple queries individually for each uploaded file.
+Enter multiple(or single) queries in the empty array space in query as string (""), seperated by commas.
 
 ### 🔍 **Running Queries on Uploaded Text Data**
 #### **Script:** `Text/textQueries.py`
