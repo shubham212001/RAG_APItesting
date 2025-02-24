@@ -32,8 +32,9 @@ This section provides detailed steps to test the API endpoints for both **text**
 ### 📌 **Steps to Upload Text Data**
 ```sh
 python Text/textFilesUpload.py
+Fill in the queries in the queries empty array under " " and use comma for seperating multiple queries.
 ```
-✅ A `queries.json` file is created with document IDs.
+✅ A `queries.json` file is created with document IDs and space for entering multiple queries individually for each uploaded file.
 
 ### 🔍 **Running Queries on Uploaded Text Data**
 #### **Script:** `Text/textQueries.py`
@@ -47,7 +48,7 @@ python Text/textFilesUpload.py
 ```sh
 python Text/textQueries.py
 ```
-✅ Results are stored in `queries_results.txt`.
+✅ Results are stored in `Text/queries_results.txt`.
 
 ---
 
@@ -66,7 +67,26 @@ python Text/textQueries.py
 python Json/JsonUpload.py
 ```
 ✅ A `json_uploaded_files.json` file is created with document IDs.
+Fill the relevant (single)field from one of the relevant properties of the json objects uploaded and add more operations in the below operations array as per need.
+Supported operations are :
+1. max – Maximum value of the field <br>
+• # 2. min – Minimum value of the field <br>
+• # 3. sum – Sum of all values in the field<br>
+• # 4. average – Average (mean) of the field values<br>
+• # 5. median – Median of the field values<br>
+• # 6. mode – Most frequently occurring value<br>
+• # 7. variance – Variance of the field values<br>
+• # 8. std_dev – Standard deviation of the field values<br>
+• # 9. count_above – Count of values greater than a given number<br>
+• # 10. count_below – Count of values less than a given number<br>
+• # 11. count_equal – Count of values equal to a given number<br>
+• # 12. group_by – Groups values by another field<br>
+• # 13. bucket – Buckets values into defined ranges<br>
+• # 14. most_common – Most frequently occurring string value in a field<br>
+• # 15. unique_count – Count of unique values in a field<br>
+<br>
 
+Simply add more operations as strings seperated by comma.
 ### 🔢 **Running Computations on Stored JSON Data**
 #### **Script:** `Json/JsonGetStats.py`
 
@@ -95,4 +115,6 @@ The provided Python scripts efficiently test text and JSON data endpoints, ensur
 ---
 
 📩 **For any issues, feel free to reach out!**
+Shubham Sharma <br>
+shubham.sharma200121@gmail.com<br>
 
