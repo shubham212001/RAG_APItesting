@@ -7,7 +7,7 @@ This section provides detailed steps to test the API endpoints for both **text**
 
 ## 📂 API Testing Directory Structure
 ```
-APItesting/
+
 │── Text/
 │   ├── textFilesUpload.py  # Uploads multiple text files
 │   ├── textQueries.py      # Runs queries on uploaded text files
@@ -22,7 +22,7 @@ APItesting/
 ## 📝 **1. Bulk Upload & Query (Text Data)**
 
 ### 📤 **Uploading Multiple Text Files**
-#### **Script:** `APItesting/Text/textFilesUpload.py`
+#### **Script:** `Text/textFilesUpload.py`
 
 **Functionality:**
 - Iterates through all text files (`PDF`, `DOCX`, `TXT`) in a folder.
@@ -36,7 +36,7 @@ python Text/textFilesUpload.py
 ✅ A `queries.json` file is created with document IDs.
 
 ### 🔍 **Running Queries on Uploaded Text Data**
-#### **Script:** `APItesting/Text/textQueries.py`
+#### **Script:** `Text/textQueries.py`
 
 **Functionality:**
 - Reads `queries.json` to fetch document IDs.
@@ -54,7 +54,7 @@ python Text/textQueries.py
 ## 📊 **2. Bulk Upload & Query (JSON Data)**
 
 ### 📤 **Uploading Multiple JSON Files**
-#### **Script:** `APItesting/Json/JsonUpload.py`
+#### **Script:** `Json/JsonUpload.py`
 
 **Functionality:**
 - Iterates through all JSON files in a folder.
@@ -68,7 +68,7 @@ python Json/JsonUpload.py
 ✅ A `json_uploaded_files.json` file is created with document IDs.
 
 ### 🔢 **Running Computations on Stored JSON Data**
-#### **Script:** `APItesting/Json/JsonGetStats.py`
+#### **Script:** `Json/JsonGetStats.py`
 
 **Functionality:**
 - Reads `json_uploaded_files.json` to fetch document IDs.
