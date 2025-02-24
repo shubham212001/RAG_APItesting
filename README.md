@@ -85,6 +85,7 @@ python Json/JsonGetStats.py
 
 ## 🛠 **Setup & Dependencies**
 Ensure you have **Python 3+** installed.
+Run - pip install requests
 
 ---
 
